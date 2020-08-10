@@ -1,0 +1,28 @@
+<testsuite failures="1" name="src/test/java/Citibank/EPP/EPP_Booking.feature" skipped="0" tests="1" time="11.566259">
+  <testcase classname="src.test.java.Citibank.EPP.EPP_Booking" name="check monthly payment plan schedule" time="11.566259">
+    <failure message="EPP_Booking.feature:22 - status code was: 400, expected: 200, response time: 1031, url: https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/easyPaymentPlans/bookings, response: {&quot;code&quot;:&quot;invalidRequest&quot;,&quot;details&quot;:&quot;Missing or invalid parameters&quot;,&quot;type&quot;:&quot;invalid&quot;}">* call read('classpath:reusable.feature') ................................. passed
+* def eppBookingPayload = read('classpath:Citibank/EPP/EPP_BookingPayload.json') . passed
+* call read('classpath:Citibank/EPP/CardAuthorization.feature') ........... passed
+* call read('classpath:Citibank/EPP/CardAuthorizationAccessToken.feature') . passed
+* call read('classpath:Citibank/EPP/RefreshAccessToken.feature') .......... passed
+* call read('classpath:Citibank/EPP/RevokeToken.feature') ................. passed
+* call read('classpath:Citibank/EPP/EPP_Plan.feature') .................... passed
+* call read('classpath:Citibank/EPP/EPPMonthlyRepayment.feature') ......... passed
+Given url 'https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/'+cardid+'/easyPaymentPlans/bookings' . passed
+And header Authorization = access_token ................................... passed
+And header client_id = 'f2f08c14-8e53-4b13-862c-bdf182d46df9' ............. passed
+And header uuid = randomString(20) ........................................ passed
+And header Accept = 'application/json' .................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request eppBookingPayload ............................................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: EPP_Booking.feature:22 - status code was: 400, expected: 200, response time: 1031, url: https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/easyPaymentPlans/bookings, response: {"code":"invalidRequest","details":"Missing or invalid parameters","type":"invalid"}&#13;
+	at ✽.Then status 200 (EPP_Booking.feature:22)&#13;
+
+* print response .......................................................... skipped
+* print '********* EPP Booked *********' .................................. skipped</failure>
+  </testcase>
+</testsuite>

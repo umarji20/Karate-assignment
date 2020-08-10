@@ -1,0 +1,1738 @@
+18:32:58.446 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/authorize/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 157
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 039504---513921-2363
+{"grant_type":"card_authorization","lastFourDigitsCardNumber":"8653","citiCardHolderPhoneNumber":"6590020056","merchantCustomerReferenceId":"CB072000128065"}
+
+18:32:59.749 response time in milliseconds: 1299.24
+1 < 403
+1 < Access-Control-Allow-Headers: ,Content-Type,sid,CCPToken,CFIToken,countryCode,businessCode,channelId,uuid,client_id,environmentId
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,HEAD
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID,sid,SessionId,CCPToken,CFIToken
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 991fbbf5-e8c2-4c52-bddd-f0fd21d68699
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Length: 210
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:00 GMT
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:00 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 039504---513921-2363
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 2b7692085f241683b3cc738d
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,59;
+1 < X-Vcap-Request-Id: 214e91dc-291b-4a3d-6861-db07a33b8753
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"58186008660711316726110805632426","status":"generated","mfaResponse":{"otpDeliveryOption":["SMS"]}}}
+
+18:32:59.752 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "58186008660711316726110805632426",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "otpDeliveryOption": [
+        "SMS"
+      ]
+    },
+    "status": "generated"
+  }
+}
+
+18:32:59.766 [print] 58186008660711316726110805632426
+18:32:59.770 [print] *********ControlFlowIdGenerated*********
+18:32:59.864 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/authorize/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 157
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 4-44954-0405265117-6
+{"grant_type":"card_authorization","lastFourDigitsCardNumber":"8653","citiCardHolderPhoneNumber":"6590020056","merchantCustomerReferenceId":"CB072000128065"}
+
+18:33:00.753 response time in milliseconds: 886.56
+1 < 403
+1 < Access-Control-Allow-Headers: ,Content-Type,sid,CCPToken,CFIToken,countryCode,businessCode,channelId,uuid,client_id,environmentId
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,HEAD
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID,sid,SessionId,CCPToken,CFIToken
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 365cdaec-aa70-4a67-82d8-49d10323bee3
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Length: 210
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:01 GMT
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:01 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 4-44954-0405265117-6
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 6e68aa425f241684dcce661f
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,59;
+1 < X-Vcap-Request-Id: 21cfcabd-4ba3-486c-575d-a310e4ccc5e3
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"27023492170866194426799615834875","status":"generated","mfaResponse":{"otpDeliveryOption":["SMS"]}}}
+
+18:33:00.754 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "27023492170866194426799615834875",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "otpDeliveryOption": [
+        "SMS"
+      ]
+    },
+    "status": "generated"
+  }
+}
+
+18:33:00.756 [print] 27023492170866194426799615834875
+18:33:00.756 [print] *********ControlFlowIdGenerated*********
+18:33:00.774 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/token/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 125
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 352-0623289938910597
+grant_type=card_authorization&controlFlowId=27023492170866194426799615834875&linkageConfirmationCode=987654&scope=lop_booking
+
+18:33:02.540 response time in milliseconds: 1762.97
+1 < 200
+1 < Accept: application/json
+1 < Access-Control-Allow-Methods: POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID
+1 < Akamai-Origin-Hop: 1
+1 < Cache-Control: no-cache, max-age=0
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Cookie: CITI_SITE=gtdc
+1 < Date: Fri, 31 Jul 2020 13:03:03 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:03 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Akamai-CONFIG-LOG-DETAIL: true
+1 < X-Akamai-True-Client-IP: 49.207.197.157
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-DataStream-Session-Id: 22f17934-5f241685-149022f8
+1 < X-Forwarded-For: 49.207.197.157
+1 < X-Global-Transaction-ID: 98b6a3705f241686ea7fc97f
+1 < X_AK_SHAPE_AGGREGATOR_IP: FALSE
+1 < cardIdHeader: 44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d
+1 < cardReferenceNumberHeader: 37344b5144564669667
+1 < citiUUID: 
+1 < client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < client_secret: Y8yP3bN7gS3lQ0aC3wE0qY3oC4gU0kK0sI1uI5hF6wF6qL4kA3
+1 < customerIdHeader: 6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d
+1 < dmz-global-txn-id: 98b6a3705f241686ea7fc97f
+1 < mfaCode: Lwm%2FctKxb2EC01wY1CyKGn0Xa51E2GLi47dRIppFBw8Oi76OJVU5Ryw0YrO5bzZyZyWOHcM6ictzh3GbB0VYeg%3D%3D
+1 < uuid: 352-0623289938910597
+{"token_type":"Bearer","access_token":"AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g","expires_in":2678400,"consented_on":1596200582,"scope":"lop_booking","refresh_token":"AALHOuHMKPKhdmPNLOGaYGMF7TGJCQ2L9w4xh6BR6u7tQegRpoMoB_tHABGR5JQRS5r_YzU15fJ4-LtAwZ4zpo93a34zhvbBC0QTbF07uuhaO0Iit9Y5ve-qD6jdXAD5q9FGqEWlX1GIg_PbfrYziVHf3hmftA7udRIyPDAxXKWpXcPH0vnTzECV-GB6wDTtSlA8e72z--cYMCd98dqojKl81ksEf23CFbUXuMe_fSyihA","refresh_token_expires_in":2682000,"cardId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","customerId":"6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d","cardReferenceNumber":"37344b5144564669667"}
+
+18:33:02.541 [print] {
+  "access_token": "AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g",
+  "refresh_token_expires_in": 2682000,
+  "refresh_token": "AALHOuHMKPKhdmPNLOGaYGMF7TGJCQ2L9w4xh6BR6u7tQegRpoMoB_tHABGR5JQRS5r_YzU15fJ4-LtAwZ4zpo93a34zhvbBC0QTbF07uuhaO0Iit9Y5ve-qD6jdXAD5q9FGqEWlX1GIg_PbfrYziVHf3hmftA7udRIyPDAxXKWpXcPH0vnTzECV-GB6wDTtSlA8e72z--cYMCd98dqojKl81ksEf23CFbUXuMe_fSyihA",
+  "scope": "lop_booking",
+  "cardId": "44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d",
+  "consented_on": 1596200582,
+  "customerId": "6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d",
+  "cardReferenceNumber": "37344b5144564669667",
+  "token_type": "Bearer",
+  "expires_in": 2678400
+}
+
+18:33:02.556 [print] Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+18:33:02.558 [print] *********AccessTokenGenerated*********
+18:33:02.610 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/loans/eligibility
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 56-7176-48880943-6-7
+
+18:33:03.849 response time in milliseconds: 1237.22
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 085ef83d-2680-4bed-b25c-c0146094d26d
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Length: 394
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:04 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:04 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 56-7176-48880943-6-7
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241687d43822f1
+1 < X-Vcap-Request-Id: 9129a594-d1bd-455c-6c54-e87abb8800d4
+1 < mfaCode: hqRY6TFN89AFIorIQ0QWN1%2F1VQtMpLUM6a4U4kZm2Xp%2BPReleRVbTMHpkmw40S4OD9dKZ8CsoDLiYZy0OzTqfpw%2B63eSdVYxzp%2F9Dj08Oeb%2FkVd4LU7APvmDsVH4M143Du3pbHohSEWR2Xkvwlcds%2Fc%2BvlaYRILfOk19%2FEOg3Tvw0HPCXI7hTa6iLDaKjYNHdc7DAnQWBjmZT7gi4%2Fjdq6wMl5fO1CK48wLFjgr%2FJDlBJTCQ%2FfC8j5cN5TvYfNXlO7uTBF7N1SKPObVZd9UNG3LLvt%2Bw2FYT%2Bvz%2B0QdFrnN0P4m5bT4oCDrdOx4xMPtOvK6g11YVEZzuCN416hBo%2FJtJubac8y8dAw6kdrrIzG0%2BrfJ5FdTP15z3FqrHrrEeptg3r2A6542hUVBVWEIF%2B8vx7LxU2tj77ZWbZor7I9c%3D
+{"loanEligibilityDetails":[{"accountId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","displayAccountNumber":"4765","lopSupportedAccountGroup":"CREDIT_CARD","maximumEligibleLoanAmount":500000.0,"minimumEligibleLoanAmount":50000.0,"offerIndicator":"RATE_BASED","interestCalculationMethod":"REDUCING_BALANCE_METHOD","lopCategory":"LOAN_OVER_PHONE"}]}
+
+18:33:03.850 [print] {
+  "loanEligibilityDetails": [
+    {
+      "minimumEligibleLoanAmount": 50000.0,
+      "accountId": "44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d",
+      "interestCalculationMethod": "REDUCING_BALANCE_METHOD",
+      "offerIndicator": "RATE_BASED",
+      "lopSupportedAccountGroup": "CREDIT_CARD",
+      "displayAccountNumber": "4765",
+      "lopCategory": "LOAN_OVER_PHONE",
+      "maximumEligibleLoanAmount": 500000.0
+    }
+  ]
+}
+
+18:33:03.889 [print] 4765
+18:33:03.889 [print] 44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d
+18:33:03.889 [print] 500000.0
+18:33:03.889 [print] 50000.0
+18:33:03.891 [print] ********* Checked Loan Eligibility And AccountId Generated *********
+18:33:03.944 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/transactions/eligibility/easyPaymentPlan?eligbleLoanAmount=50000
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 6317--13608-54877026
+
+18:33:04.725 response time in milliseconds: 781.32
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 502d2a47-1190-4267-ae7e-21eb0c13dd79
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:05 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:05 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 6317--13608-54877026
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f2416889c5634cd
+1 < X-Vcap-Request-Id: e422ee75-c72e-42ce-4225-3085a1cd0f1b
+1 < mfaCode: zB5bAzxCuOjRLjsIVEu3v41DkRfOpvSPk3grzUeURDg9rbwb2XTL1cyaXPS8A6d5NJYBMdxnQ1Fcby3WHPDkZMGXbpjxIPwbi9ZSfSCAeURKZ2Bqjn6LXoDvq6DMaO83%2BJfJLxcww3Ky%2BfpvZzRy%2FAuRyaaTut6sY5hzO1iF4waoLghhH6eA6kvhrQTCY7dJADfGdxmVfDE6K4pdLG4m%2BDLBey0FumXsE58wj8kOWwFUZj3p1zlektVSfrxE312aZQ8cr0NT01GEqK63DsvK6ofS5PIP7XyXEhWMBVtvtqv1D7ecXxDgcRAjZ%2FMgaCU0EB2xKV%2FWuT7MwvDGOxoVOWX3jNewfX4aHERlV68as%2B8IF%2BdHRek%2BF%2BZhUcMo%2B4%2BaWDRHxJuT60xzN3dmUgZAJi%2B9CrDU18q83Kb%2FjjZmLes%3D
+{"easyPaymentPlan":[{"tenor":"3","effectiveInterestRate":12.99,"annualPercentageRate":13.67,"installmentAmount":16666.67,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"6","effectiveInterestRate":25.99,"annualPercentageRate":26.67,"installmentAmount":8333.34,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"12","effectiveInterestRate":42.99,"annualPercentageRate":43.67,"installmentAmount":4166.67,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"24","effectiveInterestRate":72.99,"annualPercentageRate":73.67,"installmentAmount":2083.34,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"}]}
+
+18:33:04.727 [print] {
+  "easyPaymentPlan": [
+    {
+      "tenor": "3",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 13.67,
+      "installmentAmount": 16666.67,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 12.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "6",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 26.67,
+      "installmentAmount": 8333.34,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 25.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "12",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 43.67,
+      "installmentAmount": 4166.67,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 42.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "24",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 73.67,
+      "installmentAmount": 2083.34,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 72.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    }
+  ]
+}
+
+18:33:04.741 [print] *********Checked Easy payment plan using AccountId*********
+18:33:04.791 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/easyPaymentPlans/repaymentSchedules?loanAmount=50000&tenor=6
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 631287--0-7-838280-7
+
+18:33:05.487 response time in milliseconds: 695.18
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 84a0e45c-85cf-40ec-ab5b-addebd6a099a
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:06 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:06 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 631287--0-7-838280-7
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f241689ea80fcef
+1 < X-Vcap-Request-Id: 3f207c5e-b7d4-4da1-7612-6ed06397c716
+1 < mfaCode: 1AP6pdqoRjGGG2LRbJ4UcXqJ0nqYlu2PxlC5w8I56998WDRBP7U7aeynG81ZPnNjIlXlaND8G7C3rnRtmEgEQPlAs9CTAosJ%2BRb3SV4v0GI%2BIENClPJ%2FAy8Sh%2BML1YJvAr3wyFCXYOetEoJinl5NrfovRsn6%2ByvmAkyOe9A7c16IHx0GmuB8lIALJhcjrbUT0Dps34p14lHH4DoGcJY4RuICiRix5ooMwlB%2FVfSob4Ntnsdh42Tfz50qVO4QJ9LaWY4u8Rz2QyVghCzSRUfNJcksNiS9uHfhPy94t4QdBmtFs7TAF2oah2g0Ds%2FbRFT3MAPHZe9OLYeWrPd2ZUnWNI3%2F7QSG0XDfJzqQc8fG8lBzCUKrt%2FG1VO0p7Ac%2BJdWmCOcNIj4nsS%2FR%2BQoON2d%2Fdi4%2BGjzA7%2B1ZR00aUwhiC1A%3D
+{"eppAmortizationSchedule":[{"installmentNumber":"1","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":41666.66,"installmentDate":"07/2020"},{"installmentNumber":"2","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":33333.32,"installmentDate":"08/2020"},{"installmentNumber":"3","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":24999.98,"installmentDate":"09/2020"},{"installmentNumber":"4","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":16666.64,"installmentDate":"10/2020"},{"installmentNumber":"5","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":8333.300000000003,"installmentDate":"11/2020"},{"installmentNumber":"6","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":-0.040000000000873115,"installmentDate":"12/2020"}],"totalLoanCost":50000.0}
+
+18:33:05.492 [print] {
+  "eppAmortizationSchedule": [
+    {
+      "installmentNumber": "1",
+      "installmentDate": "07/2020",
+      "outstandingPrincipalAmount": 41666.66,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "2",
+      "installmentDate": "08/2020",
+      "outstandingPrincipalAmount": 33333.32,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "3",
+      "installmentDate": "09/2020",
+      "outstandingPrincipalAmount": 24999.98,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "4",
+      "installmentDate": "10/2020",
+      "outstandingPrincipalAmount": 16666.64,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "5",
+      "installmentDate": "11/2020",
+      "outstandingPrincipalAmount": 8333.300000000003,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "6",
+      "installmentDate": "12/2020",
+      "outstandingPrincipalAmount": -0.040000000000873115,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    }
+  ],
+  "totalLoanCost": 50000.0
+}
+
+18:33:05.509 [print] *********Checked reschedule payment plan using AccountId And Tenor*********
+18:33:05.556 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/bookings
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Content-Length: 469
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 67428--13-4066372-1-
+{"loanAmount":60000,"disbursementOption":"PERSONAL_ACCOUNT","disbursementAccountId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","tenor":12,"bankDetails":{"bankCode":"DBSSG0XXX","bankName":"HSBC Bank","branchCode":"10034","accountNumber":"5396100020088653"},"loanPurpose":"EDUCATION_OVERSEAS","employmentStatus":"PRIVATE_EMPLOYEE","occupationCode":"BUSINESS","highestEducationLevel":"GRADUATE","paymentReferenceId":123456}
+
+18:33:06.299 response time in milliseconds: 740.94
+1 < 403
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 980a7d10-b584-4305-9044-e1b74b847b93
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Length: 253
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:06 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:06 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 67428--13-4066372-1-
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 6e68aa425f24168adced922f
+1 < X-Vcap-Request-Id: b35737db-4413-4135-4e9d-19234779b672
+1 < mfaCode: swKYj7GF9chKkN3yzVOKCtqJrLIgrH%2FBeOOms0a2buel9xTjPDqgJE2zObxpmfIZeJeV9xULEUfDH%2BM0igVEIiI7tRdtCdbVlxO5VEL9xTijzcSmSOUvKIIYgn0hjtXyTihkjSW2lGI7bDJAzoB32kqjmbS6RARndxw7QpnGYGjI3wc8TbKu9Cm9e9hi6KGJlQs6UbFWRBA0RdqPMv3mwurqr6x1DmlQjRWaB1WPWf7ULbqkAM8EJxTFNU4a5L9FatWV5b3I%2BcDZqtNXKO6TE2FR0SSsD%2Fv1MjKuDhTbRZE0XartNUsEi3bZWLu5OnTWlqo2XLMgE6GxUzgiR1SrSCD8J6XU%2BLLEhD5T%2FNiUW1xAvECR0OvsLyceeDF231GtMsj%2FChiFddm1%2B84tPtmqiCkuvPIcXmYPU7G41i1YT%2Bw%3D
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"ylAQE6TwKmOAyCfYXvyDoAaSnPbcfOAuSBi3rNyV","status":"generated","mfaResponse":{"maskedPhoneNumber":"XXXXXXXX0056"},"otpDeliveryOption":["SMS"]}}
+
+18:33:06.300 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "ylAQE6TwKmOAyCfYXvyDoAaSnPbcfOAuSBi3rNyV",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "maskedPhoneNumber": "XXXXXXXX0056"
+    },
+    "otpDeliveryOption": [
+      "SMS"
+    ],
+    "status": "generated"
+  }
+}
+
+18:33:06.305 [print] ylAQE6TwKmOAyCfYXvyDoAaSnPbcfOAuSBi3rNyV
+18:33:06.307 [print] ********* Loan Booked And Control FlowId Generated *********
+18:33:06.358 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/disbursementOptions
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 513-7587495107877-4-
+
+18:33:07.052 response time in milliseconds: 657.95
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: e150f30c-901f-47b0-a8bb-7e778a427b34
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:07 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:07 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 513-7587495107877-4-
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f24168bbdcea911
+1 < X-Vcap-Request-Id: 84785756-5218-4b0f-7e30-127075c26f3f
+1 < mfaCode: TcNC%2B8LOAyy5ydSr9m67bwEpIn8uD6i4MK97LUcwoBEveX1Lo0ilJFYYQlHlIJdLMNeRyC1MAlkjtKjHGKPjqR4qYM%2BSd7pd%2Bt2WB5k1DO38iRVQ6erkHteTCB4bfPG5ogoPU5E19vnAXMAcgi%2FKv86xqdrmOwh9UfrcVyWVEZMGXBDChFkoN%2B5GMB0F0lrmo2vuXLhJVM0fMvuPpysratPpajh9oUQXtc8m%2FogV%2FcLP3W0ahGAvY75aqJL6TKEp3%2FApanHflVXEtbsuFziEKz0ZYn2gHc55L34TSDUbBEw0wQBVB2raefTps2KxKgO53i267MK%2F4eEhYFmC7qGal6qcziw1Fd7wb30u3n9P9sIrCKc0upXxFPr9yVvYaLviCCsuT2wC%2B%2F1%2FN%2Ffr9Kur%2BzcHeLLc%2FzxvWXXaMwQE7qk%3D
+{"disbursementOptions":[{"disbursementOption":"BANK_ACCOUNT"}]}
+
+18:33:07.053 [print] {
+  "disbursementOptions": [
+    {
+      "disbursementOption": "BANK_ACCOUNT"
+    }
+  ]
+}
+
+18:33:07.059 [print] ********* DisbursmentOption Details checked *********
+18:33:07.111 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/repaymentSchedules?loanAmount=60000&tenor=12
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 28836427794237716479
+
+18:33:07.913 response time in milliseconds: 800.65
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 33d3ffeb-21ec-4a8c-95c5-5d5c3aadb274
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:08 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:08 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 28836427794237716479
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f24168cea81d04f
+1 < X-Vcap-Request-Id: bf350993-f7f4-4057-6cca-be8ac18cfc2a
+1 < mfaCode: lS934OdvTHDrzm3r7LGFrudpzDKdsPXu%2FdTaQ3SGodbR1hAsRxY4019LG8zdvcN%2BXmmREBJZmkWCIqfiD0w%2FU0rN%2F%2FPiCBg4rF4NqIYPPZ0SjaQJD%2BubpNnRfxl7konfSMLXKQoy1e3owOIE4pXLysL%2B9Y4151S1j8da%2BbbBGVM2M2n%2FsgVlqbwguyJ%2Fzpi%2FLlMvPfS0phL209T9XXSNgk2UW3rjixnHqBGl7wJy0dHWAYLekRNMSy%2BzPY7Kt%2FsPSSBXdBjeyDbwuLWJHn%2FxhgixxM3FXNeMBN3p5gcv9FxKxFKMDiqEOyKAvIH4Ov9eFKqpxC6tHDA09lReYVmbgG31NlAaY7%2BXX8sUPS0UgOq451OihpkLUxUtSIY5%2FdQzEE8t4qLTS58gQ9766AdoGEkPTW%2FBaDDkiMxpV7vgJ9U%3D
+{"amortizationSchedule":[{"installmentNumber":"1","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":55000.0},{"installmentNumber":"2","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":50000.0},{"installmentNumber":"3","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":45000.0},{"installmentNumber":"4","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":40000.0},{"installmentNumber":"5","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":35000.0},{"installmentNumber":"6","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":30000.0},{"installmentNumber":"7","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":25000.0},{"installmentNumber":"8","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":20000.0},{"installmentNumber":"9","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":15000.0},{"installmentNumber":"10","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":10000.0},{"installmentNumber":"11","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":5000.0},{"installmentNumber":"12","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":0.0}],"totalLoanCost":60000.0}
+
+18:33:07.915 [print] {
+  "amortizationSchedule": [
+    {
+      "installmentNumber": "1",
+      "outstandingPrincipalAmount": 55000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "2",
+      "outstandingPrincipalAmount": 50000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "3",
+      "outstandingPrincipalAmount": 45000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "4",
+      "outstandingPrincipalAmount": 40000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "5",
+      "outstandingPrincipalAmount": 35000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "6",
+      "outstandingPrincipalAmount": 30000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "7",
+      "outstandingPrincipalAmount": 25000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "8",
+      "outstandingPrincipalAmount": 20000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "9",
+      "outstandingPrincipalAmount": 15000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "10",
+      "outstandingPrincipalAmount": 10000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "11",
+      "outstandingPrincipalAmount": 5000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "12",
+      "outstandingPrincipalAmount": 0.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    }
+  ],
+  "totalLoanCost": 60000.0
+}
+
+18:33:07.941 [print] *********Checked repayment Schedule plan for particular customer using AccountId And Tenor*********
+18:33:08.021 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/security/e2eKey
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: -063535-5-38-575-4-7
+
+18:33:08.652 response time in milliseconds: 629.62
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: f8f3d10b-700b-4fa3-8d91-029f548bd498
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:09 GMT
+1 < Eventid: 1fbba9e7-f441-41e9-9364-ab8c2d7fb219
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:09 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: -063535-5-38-575-4-7
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f24168c9c56834d
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,59;
+1 < X-Vcap-Request-Id: 8f26364b-dfba-4d37-5492-4f6a8fc0f235
+1 < responseTimeStamp: 2020-07-31T13:03:09:192
+{"modulus":"25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517","exponent":"65537"}
+
+18:33:08.653 [print] {
+  "modulus": "25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517",
+  "exponent": "65537"
+}
+
+18:33:08.663 [print] 25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517
+18:33:08.668 [print] 65537
+18:33:08.670 [print] ********* Modulus and Exponent Generated *********
+18:33:08.767 [print] {
+  "otpDeliveryOption": "SMS",
+  "otpToken": "77219F78B16B130E4894E768F08567F06470F59AAC12722D943276877C30567E8E78462F03F3D2BE5679E1AC109530F1CE7F340DB5DB342AEC0C822777D3C3B3B751A7850FAE738FF8DFCB6C805650FD0FBA90FF8E8F4A16AA1A6DC74C44A39B23512336F02C70C02D5BFCF0FAEA4170F98812B3FA9D21DE8239B300A0FFF259",
+  "transactionMemo": "ENROLLCARD",
+  "controlFlowId": "ylAQE6TwKmOAyCfYXvyDoAaSnPbcfOAuSBi3rNyV"
+}
+
+18:33:08.807 request:
+1 > PUT https://sandbox.apihub.citi.com/gcb/api/v1/mfa/otp
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5-C_GWDtWE03yOupM-nDND2rVGxkXquqHcsvUAuBX8I9Bnks6sz-e13mQs4KKlJkLhC6BVtD5OaVzH8Ke29VK9VeXAoSvKPUsNdad6iKvbLPZu-wbpFlR9oyLfJGigeTiEwL1N5gtBEJUBeVUeH3sf5I9aZgS85719q4RJNQhXiPkwAy6Z6OAfo-ucE47l7HiSAfcyd1Ky4vZzZXjAKza8g
+1 > Connection: Keep-Alive
+1 > Content-Length: 387
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 0--842-7889918-5-67-
+{"otpDeliveryOption":"SMS","otpToken":"77219F78B16B130E4894E768F08567F06470F59AAC12722D943276877C30567E8E78462F03F3D2BE5679E1AC109530F1CE7F340DB5DB342AEC0C822777D3C3B3B751A7850FAE738FF8DFCB6C805650FD0FBA90FF8E8F4A16AA1A6DC74C44A39B23512336F02C70C02D5BFCF0FAEA4170F98812B3FA9D21DE8239B300A0FFF259","transactionMemo":"ENROLLCARD","controlFlowId":"ylAQE6TwKmOAyCfYXvyDoAaSnPbcfOAuSBi3rNyV"}
+
+18:33:10.002 response time in milliseconds: 1193.52
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 099d3361-111d-4057-ab8b-1654c823820f
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:10 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:10 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 0--842-7889918-5-67-
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f24168edcee447f
+1 < X-Vcap-Request-Id: ef6f1536-fa1e-4833-511a-d335afea8a40
+1 < mfaCode: oO80ceBug11mqq9EWFcGl9G2h3MsGWNSfxUp8781trrDAnsaRRM1ZM%2BgTFX2jpi4hX9PgvmyBysKXC%2FeQdBFVNc3Gns2cne8gVVO2UjpY5vA5%2FOuJwkRmO85kfJlmVbl7eFv%2B0Zfr77hBMoImFbNzipThgx5W1BDkYHUAJmuBBezswc8vQBfin0WfW0kXJQxnl8kEUdnmqhMijVugb4jHGBnJCdEc94OQrDZefgi%2BBlZ30cSehEf6cg%2B7OfsiZ2bnHmAGYF%2FHr4oC9X17s0v2oOFSjvYQll0r5H3SwbSezR2lVS%2BYnqWbl14yU%2FlIWUlNV5MuSg%2FnJlMKTVLEQY8RELQ0Hp%2FRq4NL3wn2fhY5%2FoYVtsM6ykNzFtCL4sE3xjjE%2Fq5Hirxe8h%2F6jc0hCPi9TvQDSI1Yqke80vo1FOl9XE%3D
+
+
+18:33:10.009 [print] ********* Verified OTP *********
+18:33:10.157 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/authorize/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 157
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 1187-5-5532763892963
+{"grant_type":"card_authorization","lastFourDigitsCardNumber":"8653","citiCardHolderPhoneNumber":"6590020056","merchantCustomerReferenceId":"CB072000128065"}
+
+18:33:10.908 response time in milliseconds: 749.20
+1 < 403
+1 < Access-Control-Allow-Headers: ,Content-Type,sid,CCPToken,CFIToken,countryCode,businessCode,channelId,uuid,client_id,environmentId
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,HEAD
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID,sid,SessionId,CCPToken,CFIToken
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: ba8e5469-70d0-4dcc-a4b5-83f77fa371a0
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Length: 210
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:11 GMT
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:11 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 1187-5-5532763892963
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 6e68aa425f24168fc29e1f15
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,59;
+1 < X-Vcap-Request-Id: 0722632c-c8ee-40b9-5b24-ad530be9696d
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"14581519462457720799254058556938","status":"generated","mfaResponse":{"otpDeliveryOption":["SMS"]}}}
+
+18:33:10.909 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "14581519462457720799254058556938",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "otpDeliveryOption": [
+        "SMS"
+      ]
+    },
+    "status": "generated"
+  }
+}
+
+18:33:10.917 [print] 14581519462457720799254058556938
+18:33:10.920 [print] *********ControlFlowIdGenerated*********
+18:33:10.994 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/authorize/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 157
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 607233133864809597-5
+{"grant_type":"card_authorization","lastFourDigitsCardNumber":"8653","citiCardHolderPhoneNumber":"6590020056","merchantCustomerReferenceId":"CB072000128065"}
+
+18:33:11.619 response time in milliseconds: 622.66
+1 < 403
+1 < Access-Control-Allow-Headers: ,Content-Type,sid,CCPToken,CFIToken,countryCode,businessCode,channelId,uuid,client_id,environmentId
+1 < Access-Control-Allow-Methods: GET,PUT,POST,DELETE,HEAD
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID,sid,SessionId,CCPToken,CFIToken
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: dacd9d98-5c73-4d75-8646-d1872bac2988
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:12 GMT
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:12 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 607233133864809597-5
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 98b6a3705f24168fea825e0f
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,58;
+1 < X-Vcap-Request-Id: 7f9d077e-6b32-4a5a-5fd3-0e99d8b06dcf
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"44767305013924703657177611829190","status":"generated","mfaResponse":{"otpDeliveryOption":["SMS"]}}}
+
+18:33:11.620 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "44767305013924703657177611829190",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "otpDeliveryOption": [
+        "SMS"
+      ]
+    },
+    "status": "generated"
+  }
+}
+
+18:33:11.621 [print] 44767305013924703657177611829190
+18:33:11.622 [print] *********ControlFlowIdGenerated*********
+18:33:11.640 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/cardAuth/oauth2/token/sg/gcb
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic ZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5Olk4eVAzYk43Z1MzbFEwYUMzd0UwcVkzb0M0Z1Uwa0swc0kxdUk1aEY2d0Y2cUw0a0Ez
+1 > Connection: Keep-Alive
+1 > Content-Length: 125
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 3-29667249692530844-
+grant_type=card_authorization&controlFlowId=44767305013924703657177611829190&linkageConfirmationCode=987654&scope=lop_booking
+
+18:33:12.491 response time in milliseconds: 850.33
+1 < 200
+1 < Accept: application/json
+1 < Access-Control-Allow-Methods: POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID
+1 < Akamai-Origin-Hop: 1
+1 < Cache-Control: no-cache, max-age=0
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Cookie: CITI_SITE=gtdc
+1 < Date: Fri, 31 Jul 2020 13:03:13 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:13 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Akamai-CONFIG-LOG-DETAIL: true
+1 < X-Akamai-True-Client-IP: 49.207.197.157
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-DataStream-Session-Id: 22f17934-5f241690-14905a41
+1 < X-Forwarded-For: 49.207.197.157
+1 < X-Global-Transaction-ID: 98b6a3705f241690ea836abf
+1 < X_AK_SHAPE_AGGREGATOR_IP: FALSE
+1 < cardIdHeader: 44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d
+1 < cardReferenceNumberHeader: 37344b5144564669667
+1 < citiUUID: 
+1 < client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < client_secret: Y8yP3bN7gS3lQ0aC3wE0qY3oC4gU0kK0sI1uI5hF6wF6qL4kA3
+1 < customerIdHeader: 6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d
+1 < dmz-global-txn-id: 98b6a3705f241690ea836abf
+1 < mfaCode: fww2dG82A7mm3nQXwB9yaZtfAmJg1k1%2BiLlhn646axJRMSJVKVdS6tEGXoaXKAkqPGiBFWD0PJi64jfHZb0NHA%3D%3D
+1 < uuid: 3-29667249692530844-
+{"token_type":"Bearer","access_token":"AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA","expires_in":2678400,"consented_on":1596200592,"scope":"lop_booking","refresh_token":"AAJpU1zcuIlLUDV2FuYzqWvi4T6vhKK0jxPLMfGaVSkgyUuRVQ4jOxSHZdeWVRTRbHigY7TCC27cCO_nMJxdnUjsCd0Woq75oTMV10s2VGLth4TXRm-vXOHPdaKDgJcJIY_qxnb_56iNlzxp7-nalMiNtf4ODBqidTXz69KnUWWxVLsKORbSCrQnDFiyc9ZkVecKcsn7FdQjlycc8M2a_BTGHz9WOUxAtev0Zl4D4pXKrA","refresh_token_expires_in":2682000,"cardId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","customerId":"6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d","cardReferenceNumber":"37344b5144564669667"}
+
+18:33:12.492 [print] {
+  "access_token": "AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA",
+  "refresh_token_expires_in": 2682000,
+  "refresh_token": "AAJpU1zcuIlLUDV2FuYzqWvi4T6vhKK0jxPLMfGaVSkgyUuRVQ4jOxSHZdeWVRTRbHigY7TCC27cCO_nMJxdnUjsCd0Woq75oTMV10s2VGLth4TXRm-vXOHPdaKDgJcJIY_qxnb_56iNlzxp7-nalMiNtf4ODBqidTXz69KnUWWxVLsKORbSCrQnDFiyc9ZkVecKcsn7FdQjlycc8M2a_BTGHz9WOUxAtev0Zl4D4pXKrA",
+  "scope": "lop_booking",
+  "cardId": "44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d",
+  "consented_on": 1596200592,
+  "customerId": "6f4442616a48476f646576436c2f5a307949365a357465536f726866412f77393263316d387132506c416f3d",
+  "cardReferenceNumber": "37344b5144564669667",
+  "token_type": "Bearer",
+  "expires_in": 2678400
+}
+
+18:33:12.504 [print] Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+18:33:12.506 [print] *********AccessTokenGenerated*********
+18:33:12.536 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/loans/eligibility
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 61-67-8310892324-116
+
+18:33:13.175 response time in milliseconds: 638.62
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 8ccc0586-b958-4a66-9412-731f8999429e
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:13 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:13 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 61-67-8310892324-116
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f241691ea83c07f
+1 < X-Vcap-Request-Id: c297fdbb-6355-4563-4623-2ce48a4db6e8
+1 < mfaCode: 7FBkYaSBLln4v0nM%2FIFwMB0VlgkBw7aDMzxq5lfEBo3tGtpOUP9fdmz95bgglWkKwZU8cdlM9C3TG%2FVSwd%2FzfJDFOCODHtA1ux3VOD8PTNb5iD6kJpT9d1bMsNoCIEtmF0M9len6jW4JWraApVfAj4m%2FUhwbYpEy4uyqp1WegRBTR8v69jtK0KxkCHcJ7bGrjEJZ9Q7aPpR8DbKwIBbeL0drntiNnFhYLEWoJ5qmVGOxzzfB5tXA1xKhXHmi1%2FYjqh86z1CkUtug46QPmMa1p70fWf8eptfB0OzebMvdkb%2F4PC602vtdhljnMFHuLOYRZgotre%2FtDPobCRfGugomiTG6bWB92qo9TD9jjtztD%2Fnn5sUdqoWaIW3nEXtunGIo%2BdGxfjiv2VmC3eT3jA3kDfwlJLF7InHGeP3j4HUf2zs%3D
+{"loanEligibilityDetails":[{"accountId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","displayAccountNumber":"4765","lopSupportedAccountGroup":"CREDIT_CARD","maximumEligibleLoanAmount":500000.0,"minimumEligibleLoanAmount":50000.0,"offerIndicator":"RATE_BASED","interestCalculationMethod":"REDUCING_BALANCE_METHOD","lopCategory":"LOAN_OVER_PHONE"}]}
+
+18:33:13.176 [print] {
+  "loanEligibilityDetails": [
+    {
+      "minimumEligibleLoanAmount": 50000.0,
+      "accountId": "44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d",
+      "interestCalculationMethod": "REDUCING_BALANCE_METHOD",
+      "offerIndicator": "RATE_BASED",
+      "lopSupportedAccountGroup": "CREDIT_CARD",
+      "displayAccountNumber": "4765",
+      "lopCategory": "LOAN_OVER_PHONE",
+      "maximumEligibleLoanAmount": 500000.0
+    }
+  ]
+}
+
+18:33:13.199 [print] 4765
+18:33:13.199 [print] 44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d
+18:33:13.199 [print] 500000.0
+18:33:13.200 [print] 50000.0
+18:33:13.202 [print] ********* Checked Loan Eligibility And AccountId Generated *********
+18:33:13.232 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/transactions/eligibility/easyPaymentPlan?eligbleLoanAmount=50000
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 07-8---45-10-64-5874
+
+18:33:14.418 response time in milliseconds: 1185.33
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: f15ce955-26ea-4acb-930c-46a4c359f319
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:15 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:15 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 07-8---45-10-64-5874
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241692dcefa40f
+1 < X-Vcap-Request-Id: 6bca03e8-2a5b-4025-5d3c-12a915e07318
+1 < mfaCode: 8zAvTmSWeJErUne9lyXYXfAIzv5L5KFSNWyZe042EbDQsQVL3XsuopX3Ivr1e9f%2FUsDOQBX0gV9qS05slZ%2FR051%2BViQVW4oIVor6lQabCVT6%2F5a%2B5vsm7o8jBz9b6JASM%2FXZ%2FEHMZCyXQPlMhDTscI4Vl92%2FC5u0OrMCDy4Bw06MiuK4DgDcgsZiAjEGV%2FbscMuo%2BKip75VGp3D%2FMLgqaojyGCXq1j7XiRpwwbEpfy%2FZunvK7LDSbbxGpgJi6z9Hehz8QhzCBbOlAh4BoosYbaA0uC4xl0s%2FCAfPLsnrG8RVIhuoHNWgpgGD6vAZyAMO569XnvUWnFRhAxWbvMBrnV73b7QagwcoXmwJc1x3qhHD30U3I84HDHivQpF1hiP2SyNuQBika6G9WCsyLBJizgSwU1Nm3uuBLbOwOUpiv%2Fc%3D
+{"easyPaymentPlan":[{"tenor":"3","effectiveInterestRate":12.99,"annualPercentageRate":13.67,"installmentAmount":16666.67,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"6","effectiveInterestRate":25.99,"annualPercentageRate":26.67,"installmentAmount":8333.34,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"12","effectiveInterestRate":42.99,"annualPercentageRate":43.67,"installmentAmount":4166.67,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"},{"tenor":"24","effectiveInterestRate":72.99,"annualPercentageRate":73.67,"installmentAmount":2083.34,"oneTimeProcessingFeeIndicator":"FIXED_AMOUNT","oneTimeProcessingFeeAmount":15.15,"oneTimeProcessingFeePercentage":0.75,"offerIndicator":"RATE_BASED"}]}
+
+18:33:14.419 [print] {
+  "easyPaymentPlan": [
+    {
+      "tenor": "3",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 13.67,
+      "installmentAmount": 16666.67,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 12.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "6",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 26.67,
+      "installmentAmount": 8333.34,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 25.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "12",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 43.67,
+      "installmentAmount": 4166.67,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 42.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    },
+    {
+      "tenor": "24",
+      "offerIndicator": "RATE_BASED",
+      "annualPercentageRate": 73.67,
+      "installmentAmount": 2083.34,
+      "oneTimeProcessingFeePercentage": 0.75,
+      "oneTimeProcessingFeeIndicator": "FIXED_AMOUNT",
+      "effectiveInterestRate": 72.99,
+      "oneTimeProcessingFeeAmount": 15.15
+    }
+  ]
+}
+
+18:33:14.430 [print] *********Checked Easy payment plan using AccountId*********
+18:33:14.458 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/easyPaymentPlans/repaymentSchedules?loanAmount=50000&tenor=6
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 7704-48-599-1-67-367
+
+18:33:15.128 response time in milliseconds: 668.51
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 22ed5ef5-fcbb-4a4a-b500-a2d57b157172
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:15 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:15 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 7704-48-599-1-67-367
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241693dcf0cf8f
+1 < X-Vcap-Request-Id: 1c8ebffd-88c4-46a7-638a-391a320675b3
+1 < mfaCode: hkXvL2cv0t7vs8esfpkWTNwwt3fQ97HOWhg0fJXBL%2BKxu4sK4rWhIzTRNz9oJG2NV4ybnoYE6XmBPlQmAztaGlHqRYtSbTU6AT%2FsNOaaH0gbq%2BQN4OkeZU%2F58XuXW7cycoAItvcw2O%2ByXuGRbyR8tA9TrlszEOVYBxvZAON4WXG%2BYTQdmPKiTfpUo34d%2B4BVeMUsrsegWLh3JxgdueHtf5sBw3TY94uktrgCfdTExWEJOgviAFHV0SIphbO%2BsUNuCVluzSMV0gy46kNV7P9mqJXwW1wuLWMIOk0rlaBIBJNsDyUw4M3%2BVCHeSRJd9VegezCPzEhehcosunCDLbZbNbkKi4wCWT8AHpiORnpoEdPnVZOGUz8xymOI4JtyTBxqlnLXO8MhKfuVdDg5jd9rleU3GMqNuIGjIb19I8jw3bA%3D
+{"eppAmortizationSchedule":[{"installmentNumber":"1","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":41666.66,"installmentDate":"07/2020"},{"installmentNumber":"2","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":33333.32,"installmentDate":"08/2020"},{"installmentNumber":"3","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":24999.98,"installmentDate":"09/2020"},{"installmentNumber":"4","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":16666.64,"installmentDate":"10/2020"},{"installmentNumber":"5","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":8333.300000000003,"installmentDate":"11/2020"},{"installmentNumber":"6","installmentAmount":8333.34,"principalAmount":8333.34,"installmentInterestAmount":"5","outstandingPrincipalAmount":-0.040000000000873115,"installmentDate":"12/2020"}],"totalLoanCost":50000.0}
+
+18:33:15.129 [print] {
+  "eppAmortizationSchedule": [
+    {
+      "installmentNumber": "1",
+      "installmentDate": "07/2020",
+      "outstandingPrincipalAmount": 41666.66,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "2",
+      "installmentDate": "08/2020",
+      "outstandingPrincipalAmount": 33333.32,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "3",
+      "installmentDate": "09/2020",
+      "outstandingPrincipalAmount": 24999.98,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "4",
+      "installmentDate": "10/2020",
+      "outstandingPrincipalAmount": 16666.64,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "5",
+      "installmentDate": "11/2020",
+      "outstandingPrincipalAmount": 8333.300000000003,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    },
+    {
+      "installmentNumber": "6",
+      "installmentDate": "12/2020",
+      "outstandingPrincipalAmount": -0.040000000000873115,
+      "installmentAmount": 8333.34,
+      "principalAmount": 8333.34,
+      "installmentInterestAmount": "5"
+    }
+  ],
+  "totalLoanCost": 50000.0
+}
+
+18:33:15.141 [print] *********Checked reschedule payment plan using AccountId And Tenor*********
+18:33:15.166 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/bookings
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Content-Length: 469
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 1-530197008833422-1-
+{"loanAmount":60000,"disbursementOption":"PERSONAL_ACCOUNT","disbursementAccountId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","tenor":12,"bankDetails":{"bankCode":"DBSSG0XXX","bankName":"HSBC Bank","branchCode":"10034","accountNumber":"5396100020088653"},"loanPurpose":"EDUCATION_OVERSEAS","employmentStatus":"PRIVATE_EMPLOYEE","occupationCode":"BUSINESS","highestEducationLevel":"GRADUATE","paymentReferenceId":123456}
+
+18:33:15.890 response time in milliseconds: 723.59
+1 < 403
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 2b9aae55-fd83-4091-87a9-fc40ab283c05
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: close
+1 < Content-Length: 253
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:16 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:16 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 1-530197008833422-1-
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: FAIL FAIL,FAIL FAIL,FAIL FAIL
+1 < X-Global-Transaction-ID: 6e68aa425f241694dcf10ebf
+1 < X-Vcap-Request-Id: 0075e168-16ff-44fe-4392-d750ca082acf
+1 < mfaCode: uwKEslFcqd7jDX7%2FSjU0qO3SizCq8YS5SECoye2%2Ba9pJxzdvPshw60Suw6j6Pu0rkExGupAJcEwVOZLRuga9GMx665P1xgYCYKM3n4FzWmpbKPYTnoCLWGn9nmglXDCfML07Gd%2Bvo0scNaPmDV53Oc2uDEVR1tQeZrswzVaFiaJXij3QZx9TTZtSWhMBe2gNKtJM47Ot0MwzKMBR0qv1hbvEpmnt1JczrR3wfUmTw6l1kTY1ZqQcUTY4vcTplhNLM8Q8URn2IQeAKUgfjAG1bvJeVeWAtqxTLSTs9MSzJy5JgoQ3%2Fho0WEnEw5nJ%2FFDUVupzt4x%2Fgq5fdjJVB5VszPgu0N6z5KrCkNvbFlQvVspfnHX0PZykJ47BsdIlNpsF3ewUjAgRm29%2BLf6mRirOUXoQ3sa20rDxqO%2FJIkZdCd8%3D
+{"type":"error","code":"mfaRequired","details":"MFA is required","moreInfo":{"mfaType":"otp","controlFlowId":"EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5","status":"generated","mfaResponse":{"maskedPhoneNumber":"XXXXXXXX0056"},"otpDeliveryOption":["SMS"]}}
+
+18:33:15.891 [print] {
+  "code": "mfaRequired",
+  "details": "MFA is required",
+  "type": "error",
+  "moreInfo": {
+    "controlFlowId": "EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5",
+    "mfaType": "otp",
+    "mfaResponse": {
+      "maskedPhoneNumber": "XXXXXXXX0056"
+    },
+    "otpDeliveryOption": [
+      "SMS"
+    ],
+    "status": "generated"
+  }
+}
+
+18:33:15.894 [print] EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5
+18:33:15.896 [print] ********* Loan Booked And Control FlowId Generated *********
+18:33:15.918 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/disbursementOptions
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: -59099-6294--0547684
+
+18:33:17.085 response time in milliseconds: 1166.08
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: c316fb45-21b8-45c8-aae5-fecc1d4392c5
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Length: 63
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:17 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:17 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: -59099-6294--0547684
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241695c29b0bd5
+1 < X-Vcap-Request-Id: a3205ebc-b379-46be-65fb-48e963d589f7
+1 < mfaCode: WF%2FMaMoo7GdcZ%2B3eZ9iHru%2BqBQ%2BUhZR3L3kRLlX7EKAsYv1RvH4lFQCbDBVJS3FJicxi26MFQGRS4knpsgdvCWJMiVGOwhQvTDZ%2FvHFuc%2BFXeOZktvSPed1CC%2BfKCyqZVfpfCofiUiF4gXIYqvI3stMNv8U7q6Z4Sh%2F4Lpjtw41DyPmvWdsy6nwegnUedNOnbiOFDSrTUMjZkjOHCTU%2Buur9%2Bs1ZP0AMSuKIOATXBybdyK79Z4SEdS9N9OCEuQcxu3SrZl%2BgpCFy50xwCrdmewwbB7OW5foKRxlUBSJBkS8WzSy24bc%2FjyEUEiYLpFdZ0qkfM8wQc9jwIcPzR%2Blwb8%2F83kbQSCUTUB4S7KfpkZU2W0iV2ZsbhxMqNfI3w9TkAhfajsIdHUwqHzUpvEX8sH%2FD5q%2Fa3c6nLNyTWNgNhXo%3D
+{"disbursementOptions":[{"disbursementOption":"BANK_ACCOUNT"}]}
+
+18:33:17.086 [print] {
+  "disbursementOptions": [
+    {
+      "disbursementOption": "BANK_ACCOUNT"
+    }
+  ]
+}
+
+18:33:17.091 [print] ********* DisbursmentOption Details checked *********
+18:33:17.120 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans/repaymentSchedules?loanAmount=60000&tenor=12
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: -363600956062210--11
+
+18:33:17.751 response time in milliseconds: 630.32
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: f5b0d22b-f965-4710-9294-538ee9a0a999
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:18 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:18 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: -363600956062210--11
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f241695ea84020f
+1 < X-Vcap-Request-Id: 19c0bf77-2138-4d9c-77d1-fd93163b66ec
+1 < mfaCode: Td%2BaovFq9HQUFdgwcxyZbqlusYJ7VT2ba5OGEdHgvB8WQpizcCY7AlUJxzcDLPw18mSSf1AQko1K2VMfglI8VpVriuKWt3PznXqAYvyC9YzVURPbYwlEjbR%2BIB3hlyWxslUi%2BXRSfQiVL83iT9dmr5yDMD8U40jdv8eE45f%2BwM2AOI0T9Ot0Spx2awp%2FTxHNmGYwlULbVnhYzrlSnzuyIKqclSOZNqaJgHL%2FaJ4jyye7Wdre62fcqRASXROJ88uUlOB3yN%2BwXRDHb%2FmYHZNH0YbDu%2FVs85vgyWPoOCTnsvwLlVRAcxAR4qgM%2B4mDYz72GkUr5JMHdVFjWPK8TAo4sJ4clZF7LH%2BnSG5%2Fbo7pzUxFg8ut66kLgFj%2F8rP6DbqB4DicC6A8ELt1tcYNa4N9y%2FXJfuaCUyFyf6WFE9YFXLY%3D
+{"amortizationSchedule":[{"installmentNumber":"1","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":55000.0},{"installmentNumber":"2","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":50000.0},{"installmentNumber":"3","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":45000.0},{"installmentNumber":"4","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":40000.0},{"installmentNumber":"5","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":35000.0},{"installmentNumber":"6","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":30000.0},{"installmentNumber":"7","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":25000.0},{"installmentNumber":"8","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":20000.0},{"installmentNumber":"9","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":15000.0},{"installmentNumber":"10","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":10000.0},{"installmentNumber":"11","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":5000.0},{"installmentNumber":"12","installmentAmount":5000.0,"principalAmount":5000.0,"installmentInterestAmount":5.0,"outstandingPrincipalAmount":0.0}],"totalLoanCost":60000.0}
+
+18:33:17.752 [print] {
+  "amortizationSchedule": [
+    {
+      "installmentNumber": "1",
+      "outstandingPrincipalAmount": 55000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "2",
+      "outstandingPrincipalAmount": 50000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "3",
+      "outstandingPrincipalAmount": 45000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "4",
+      "outstandingPrincipalAmount": 40000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "5",
+      "outstandingPrincipalAmount": 35000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "6",
+      "outstandingPrincipalAmount": 30000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "7",
+      "outstandingPrincipalAmount": 25000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "8",
+      "outstandingPrincipalAmount": 20000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "9",
+      "outstandingPrincipalAmount": 15000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "10",
+      "outstandingPrincipalAmount": 10000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "11",
+      "outstandingPrincipalAmount": 5000.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    },
+    {
+      "installmentNumber": "12",
+      "outstandingPrincipalAmount": 0.0,
+      "installmentAmount": 5000.0,
+      "principalAmount": 5000.0,
+      "installmentInterestAmount": 5.0
+    }
+  ],
+  "totalLoanCost": 60000.0
+}
+
+18:33:17.771 [print] *********Checked repayment Schedule plan for particular customer using AccountId And Tenor*********
+18:33:17.795 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/security/e2eKey
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 594602685044919----5
+
+18:33:18.346 response time in milliseconds: 549.87
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 9d714d87-e777-4438-a10b-15e9d0087f31
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:19 GMT
+1 < Eventid: 54d9d36e-851c-4b06-8796-1d677ddf5565
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:19 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 594602685044919----5
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f2416969c5727fd
+1 < X-RateLimit-Limit: name=rate-limit-1,60;
+1 < X-RateLimit-Remaining: name=rate-limit-1,59;
+1 < X-Vcap-Request-Id: 82bdb18b-4571-49c7-65e5-44eb495baf9c
+1 < responseTimeStamp: 2020-07-31T13:03:18:897
+{"modulus":"25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517","exponent":"65537"}
+
+18:33:18.346 [print] {
+  "modulus": "25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517",
+  "exponent": "65537"
+}
+
+18:33:18.352 [print] 25807395448071880783063927664374276788531724019461095264536052917600122265726029248747658160092353325359325129355167225424735918124363962381871059412349578546292866271265015090276541231944169570880649141670888497759814527528143259824041913284350061770978018169766071113460845844085108459469585158391450098526935406938429662137050064537051989490280303654447338274065759645982123006995627973064765906600650983646328270841255201378932565397694376262787081653043786607684608758916500075911562621219363246723608091519909511420957714139087992091519498817912511234942193225900995521911767829887100702768647386501006526024517
+18:33:18.355 [print] 65537
+18:33:18.357 [print] ********* Modulus and Exponent Generated *********
+18:33:18.381 [print] {
+  "otpDeliveryOption": "SMS",
+  "otpToken": "77219F78B16B130E4894E768F08567F06470F59AAC12722D943276877C30567E8E78462F03F3D2BE5679E1AC109530F1CE7F340DB5DB342AEC0C822777D3C3B3B751A7850FAE738FF8DFCB6C805650FD0FBA90FF8E8F4A16AA1A6DC74C44A39B23512336F02C70C02D5BFCF0FAEA4170F98812B3FA9D21DE8239B300A0FFF259",
+  "transactionMemo": "ENROLLCARD",
+  "controlFlowId": "EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5"
+}
+
+18:33:18.383 request:
+1 > PUT https://sandbox.apihub.citi.com/gcb/api/v1/mfa/otp
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Content-Length: 387
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 243--38-625261-70142
+{"otpDeliveryOption":"SMS","otpToken":"77219F78B16B130E4894E768F08567F06470F59AAC12722D943276877C30567E8E78462F03F3D2BE5679E1AC109530F1CE7F340DB5DB342AEC0C822777D3C3B3B751A7850FAE738FF8DFCB6C805650FD0FBA90FF8E8F4A16AA1A6DC74C44A39B23512336F02C70C02D5BFCF0FAEA4170F98812B3FA9D21DE8239B300A0FFF259","transactionMemo":"ENROLLCARD","controlFlowId":"EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5"}
+
+18:33:19.181 response time in milliseconds: 798.52
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 566b06fd-c3ef-4f75-be92-e954309b2997
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:19 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:19 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 243--38-625261-70142
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 98b6a3705f241697ea86323f
+1 < X-Vcap-Request-Id: 6c6a172d-7adb-4966-7b70-8d379cb27082
+1 < mfaCode: O21dMMWgjy%2F2BYmrUIcbQnGuhCK7x8%2FSRibEerG57v7Z6tojA4PjoZ1NiCbhVfweaOTg2bKpAL15%2FPwk8kaE%2FBRKJrOqTKAV3KYciu44u9VmjonMI79hIg0RRMcFLlGS8IIHu%2FFX02nYlPfN%2Fhy3lILS4%2FB6iPvb7k%2BkFZl7Ka0abiSPBr2sS%2BHbq%2FeDc6y7MQYaEMYzDeNdmX1VoeUwx1l%2BH5AwtvM%2BBjyYuymDdCkeXV3N4UnzYJBEF15ZO0CQJm6CrkaCKzbaT2dQrZVgvyBarFSchTP3i6uTeaYFO0KWM3ww9Hs15rVUpglM5RqvC6M34QXXPZAB8M9IjbHZ3g5B4RSE7ZPa9abrLD4xPTEQad5M6yqO%2FmES%2FsRCvTvvsGOqhKJ0eG5lt1euzjS7DIx2jsI7lvvo1MhBI2eJDo8%3D
+
+
+18:33:19.196 [print] ********* Verified OTP *********
+18:33:19.209 [print] {
+  "controlFlowId": "EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5"
+}
+
+18:33:19.211 request:
+1 > POST https://sandbox.apihub.citi.com/gcb/api/v1/accounts/loans/bookings/confirmation
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Content-Length: 60
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 506-2642222-33507249
+{"controlFlowId":"EBLVAnxBn1sinluC5vsPwO8vmKR3zeeLO6i8Fni5"}
+
+18:33:19.845 response time in milliseconds: 589.50
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 0b7c5ef1-537d-4718-9720-9d0237a474c3
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Length: 42
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:20 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:20 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 506-2642222-33507249
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:2
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241698dcf1b17f
+1 < X-Vcap-Request-Id: cf39e92c-b1e0-41b1-4449-95ccc7c9ca72
+1 < mfaCode: vv3Mx5CdJpLnP0cL3PLYLvvlQIHTf6fCsZC%2BC4hnLx33a2MEkdCS9yk0D8mKdmlYWsK8qESaIC%2FKtVWjH8yuueeXUIUtFoRXfv343mapboONOL28%2F18or1%2BOtaHSIT6cnqQPAgm836sezHT4sc3xmM%2FZtPoDvmjfZJLtx5%2FoeQWZBKs9ZIw2zuBJJ7mhg6zTtLTXI7DC0nDIexvFlrC%2FTnhL3Cg9gW5zVRbU4I6RnVzX0N32O%2FWTcWa0XwYCue%2Fnd5hF5eI83pDoJC4wXsPVk0wshzenLZZ5ZRVEEWUeV5Z15P1Ceh3ZNyTlf0QmV8rJS688oW2OPqRIJNfQqSEWv7PFmxkVk9B6lv6XlpBndmZoshVnGgYHkI%2Fn0vS7W1KYVv6gxLxqQlAJQFjkguxuG%2FjuGDU3PE6MKEvm0a0PdhI%3D
+{"loanReferenceId":"gmTSclRbg0N1blPl4IxH"}
+
+18:33:19.846 [print] {
+  "loanReferenceId": "gmTSclRbg0N1blPl4IxH"
+}
+
+18:33:19.852 [print] gmTSclRbg0N1blPl4IxH
+18:33:19.854 [print] ********* LoanReferenceId Generated *********
+18:33:19.880 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/loans
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 1415--5-270-7-932--5
+
+18:33:20.585 response time in milliseconds: 701.62
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: ae6d9f0d-203b-4a1e-ac05-c25b5644bb6d
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:21 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:21 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 1415--5-270-7-932--5
+1 < Vary: Accept-Encoding
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241698dcf2958f
+1 < X-Vcap-Request-Id: 5d517d54-f457-4515-46ff-8ac0b7f49eba
+1 < mfaCode: SY7ZQRiXqCq4A1xRukhT5oxH2DZ69%2BmDiWljoOEFsU6HzSprAiFJ69CiCP%2Bx2frZL57I4h2vDLM4mHKvgKmCwmcIVBRHMr1dLDVK7JOtHblqvPfusUPDyFU8rMw7a0esjeNQ7quKJ2L%2BO5OwHCvhJCXY6HwDWMjwRctLZMYBixxqH4iRgkZFEC%2B%2FppAbPZAsFcXmy7%2FnjXGuQfjvNc1bNAJji2cOOpPwRKgFpnGMWkfJAB5QPJCH%2FQHnjcmd4ZeXsRzWRnvcx4DfIXR9u3cTopYnWJ%2FpDWLsvOCLmPpiCgzAcsG4fbKzfbJpb%2Bv19%2B4mPfFXkbM9sZhlY%2ByiCB8FojxcrbDWcTO3elGr0LOyzRaTc3hw8hZ1zKwb1z5o1KbIevwIxatOsGH53y%2B878jwVPaIW8oqE4VPvmkFhKm48UQ%3D
+{"loans":[{"loanReferenceId":"xNLgEEWcsxUiUUU26pSB","displayAccountNumber":"5396100020088653","transactionDate":"2019-01-01","transactionDescription":"Transaction for loan ref id xNLgEEWcsxUiUUU26pSB","installmentAmount":44.66,"nextInstallmentAmount":144.66,"outstandingBalanceAmount":100.0,"tenor":3,"outstandingTenor":2,"originalLoanAmount":80000.0,"annualPercentageRate":13.67,"effectiveInterestRate":12.99,"processingChargeAmount":15.15,"outstandingInterestAmount":15.56,"installmentCycle":4},{"loanReferenceId":"V7e8ygZzCFshjDcrH56w","displayAccountNumber":"5396100020088653","transactionDate":"2019-01-01","transactionDescription":"Transaction for loan ref id V7e8ygZzCFshjDcrH56w","installmentAmount":44.66,"nextInstallmentAmount":144.66,"outstandingBalanceAmount":100.0,"tenor":6,"outstandingTenor":5,"originalLoanAmount":80000.0,"annualPercentageRate":26.67,"effectiveInterestRate":25.99,"processingChargeAmount":15.15,"outstandingInterestAmount":15.56,"installmentCycle":4},{"loanReferenceId":"27ACPd4Z4zLiFudMmYi6","displayAccountNumber":"5396100020088653","transactionDate":"2019-01-01","transactionDescription":"Transaction for loan ref id 27ACPd4Z4zLiFudMmYi6","installmentAmount":44.66,"nextInstallmentAmount":144.66,"outstandingBalanceAmount":100.0,"tenor":12,"outstandingTenor":11,"originalLoanAmount":80000.0,"annualPercentageRate":43.67,"effectiveInterestRate":42.99,"processingChargeAmount":15.15,"outstandingInterestAmount":15.56,"installmentCycle":4},{"loanReferenceId":"bQDi5O2ekT87gPGJFaHg","displayAccountNumber":"5396100020088653","transactionDate":"2019-01-01","transactionDescription":"Transaction for loan ref id bQDi5O2ekT87gPGJFaHg","installmentAmount":1500.0,"nextInstallmentAmount":1600.0,"outstandingBalanceAmount":100.0,"tenor":24,"outstandingTenor":23,"originalLoanAmount":80000.0,"annualPercentageRate":73.67,"effectiveInterestRate":72.99,"processingChargeAmount":15.15,"outstandingInterestAmount":15.56,"installmentCycle":4}]}
+
+18:33:20.587 [print] {
+  "loans": [
+    {
+      "installmentAmount": 44.66,
+      "annualPercentageRate": 13.67,
+      "outstandingInterestAmount": 15.56,
+      "processingChargeAmount": 15.15,
+      "installmentCycle": 4,
+      "transactionDescription": "Transaction for loan ref id xNLgEEWcsxUiUUU26pSB",
+      "outstandingTenor": 2,
+      "transactionDate": "2019-01-01",
+      "originalLoanAmount": 80000.0,
+      "tenor": 3,
+      "outstandingBalanceAmount": 100.0,
+      "displayAccountNumber": "5396100020088653",
+      "nextInstallmentAmount": 144.66,
+      "loanReferenceId": "xNLgEEWcsxUiUUU26pSB",
+      "effectiveInterestRate": 12.99
+    },
+    {
+      "installmentAmount": 44.66,
+      "annualPercentageRate": 26.67,
+      "outstandingInterestAmount": 15.56,
+      "processingChargeAmount": 15.15,
+      "installmentCycle": 4,
+      "transactionDescription": "Transaction for loan ref id V7e8ygZzCFshjDcrH56w",
+      "outstandingTenor": 5,
+      "transactionDate": "2019-01-01",
+      "originalLoanAmount": 80000.0,
+      "tenor": 6,
+      "outstandingBalanceAmount": 100.0,
+      "displayAccountNumber": "5396100020088653",
+      "nextInstallmentAmount": 144.66,
+      "loanReferenceId": "V7e8ygZzCFshjDcrH56w",
+      "effectiveInterestRate": 25.99
+    },
+    {
+      "installmentAmount": 44.66,
+      "annualPercentageRate": 43.67,
+      "outstandingInterestAmount": 15.56,
+      "processingChargeAmount": 15.15,
+      "installmentCycle": 4,
+      "transactionDescription": "Transaction for loan ref id 27ACPd4Z4zLiFudMmYi6",
+      "outstandingTenor": 11,
+      "transactionDate": "2019-01-01",
+      "originalLoanAmount": 80000.0,
+      "tenor": 12,
+      "outstandingBalanceAmount": 100.0,
+      "displayAccountNumber": "5396100020088653",
+      "nextInstallmentAmount": 144.66,
+      "loanReferenceId": "27ACPd4Z4zLiFudMmYi6",
+      "effectiveInterestRate": 42.99
+    },
+    {
+      "installmentAmount": 1500.0,
+      "annualPercentageRate": 73.67,
+      "outstandingInterestAmount": 15.56,
+      "processingChargeAmount": 15.15,
+      "installmentCycle": 4,
+      "transactionDescription": "Transaction for loan ref id bQDi5O2ekT87gPGJFaHg",
+      "outstandingTenor": 23,
+      "transactionDate": "2019-01-01",
+      "originalLoanAmount": 80000.0,
+      "tenor": 24,
+      "outstandingBalanceAmount": 100.0,
+      "displayAccountNumber": "5396100020088653",
+      "nextInstallmentAmount": 1600.0,
+      "loanReferenceId": "bQDi5O2ekT87gPGJFaHg",
+      "effectiveInterestRate": 72.99
+    }
+  ]
+}
+
+18:33:20.592 [print] xNLgEEWcsxUiUUU26pSB
+18:33:20.594 [print] ********* Summary LoanReferenceId Generated *********
+18:33:20.601 request:
+1 > GET https://sandbox.apihub.citi.com/gcb/api/v1/accounts/loans/xNLgEEWcsxUiUUU26pSB/repaymentSchedules
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer AAIkZjJmMDhjMTQtOGU1My00YjEzLTg2MmMtYmRmMTgyZDQ2ZGY5HkD-Vxe1aefl3OpEK6Bj92ZHo8JaPty8w7706YvIKIrP-j6DmInMeRCRJ2pSv1R-ZeUW7wTbfRNtYeJMkhlA_5AGs6J9uxNn7_FnECeGm-mxWR6DxaCL_7lQhdY3gC0W8p2f-D1NacjSSeVDYQ6UjJvct2j-DdkWQAwHpca5X9DuMd0yFdSDfWr8pIJCsg0ZwA9gwwp5YZqR66wcABFBLA
+1 > Connection: Keep-Alive
+1 > Cookie: CITI_SITE=gtdc
+1 > Host: sandbox.apihub.citi.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+1 > client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 > uuid: 23607-716734-0460879
+
+18:33:21.244 response time in milliseconds: 642.45
+1 < 200
+1 < Access-Control-Allow-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Allow-Methods: GET,POST,PUT,DELETE
+1 < Access-Control-Allow-Origin: 
+1 < Access-Control-Expose-Headers: Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+1 < Access-Control-Max-Age: 2147483647
+1 < Cache-Control: no-cache, no-store
+1 < Citiuuid: 6c26e000-f5ba-486e-9be4-ebfb2c5d5c02
+1 < Client_id: f2f08c14-8e53-4b13-862c-bdf182d46df9
+1 < Connection: keep-alive
+1 < Content-Length: 138
+1 < Content-Type: application/json
+1 < Date: Fri, 31 Jul 2020 13:03:21 GMT
+1 < Expires: -1
+1 < I-Cif: 025056868
+1 < Pragma: no-cache
+1 < Set-Cookie: CITI_SITE=gtdc; expires=Fri, 31-Jul-2020 13:23:21 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+1 < Uuid: 23607-716734-0460879
+1 < X-Akamai-CITISITE: GTDC
+1 < X-Application-Context: PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:0
+1 < X-Backside-Transport: OK OK,OK OK,OK OK
+1 < X-Global-Transaction-ID: 6e68aa425f241699c29e74d5
+1 < X-Vcap-Request-Id: ac9db358-99a3-410d-6122-1ed9936d0321
+1 < mfaCode: CHhkthUYNoQUNRyqeWMnJEBxso2J%2F6Eg6WtlwiNPLTZQUF54DB%2FYh7gCfabFjh%2Fk%2FAEZiFFt72DmNPTzlObhQSB4PVjQUouFBS0rIPzk01b4RBCp0s8xROpHySNm54q1%2Bt4a4b6nEVH5%2FTJ3qyQEPkR01sP1ntlyNY%2Bcs1nP6xnGvn0F3BxViTiXk5Sgl2FBDl0YmhblNnXVIy1zKxUuIJSNbl49LF3hWekq2bpAmV1kYfWVC2M2T8ikYwBOu0XSJgYPneM2XbWTvx6hG7SVsr8GvNxPNK7Nh8OHkZn8LWBjX%2F%2BpDKBsByGjIa0ImE9NC3ooo%2BZV%2BYquYIhTHpJslNqgfChfLMbKTDEKst7qC59xC8EdiHMBS%2BogWp7tz2hVjnZpWNZ2YruiC601g7RXz5DxuvC8Clp6NN0%2B6zicFdc%3D
+{"amortizationSchedule":[{"installmentNumber":"1","installmentAmount":44.66,"principalAmount":80000.0,"installmentInterestAmount":12.99}]}
+
+18:33:21.245 [print] {
+  "amortizationSchedule": [
+    {
+      "installmentNumber": "1",
+      "installmentAmount": 44.66,
+      "principalAmount": 80000.0,
+      "installmentInterestAmount": 12.99
+    }
+  ]
+}
+
+18:33:21.250 [print] ********* Upcomming Payments details Generated *********
+26:29.702 [print] ********* Upcomming Payments details Generated *********

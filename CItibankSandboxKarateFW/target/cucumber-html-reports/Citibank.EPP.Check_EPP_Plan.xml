@@ -1,0 +1,27 @@
+<testsuite failures="1" name="Citibank/EPP/Check_EPP_Plan.feature" skipped="0" tests="1" time="17.711843">
+  <testcase classname="Citibank.EPP.Check_EPP_Plan" name="check customer loan eligibility using access token" time="17.711843">
+    <failure message="Check_EPP_Plan.feature:18 - status code was: 401, expected: 200, response time: 437, url: https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/transactions/eligibility/easyPaymentPlan?eligbleLoanAmount=100000, response: {&quot;code&quot;:&quot;unAuthorized&quot;,&quot;details&quot;:&quot;Authorization credential is missing or invalid&quot;,&quot;type&quot;:&quot;error&quot;}">* call read('classpath:reusable.feature') ................................. passed
+* call read('classpath:Citibank/EPP/CardAuthorization.feature') ........... passed
+* call read('classpath:Citibank/EPP/CardAuthorizationAccessToken.feature') . passed
+* call read('classpath:Citibank/EPP/RefreshAccessToken.feature') .......... passed
+* call read('classpath:Citibank/EPP/RevokeToken.feature') ................. passed
+Given url 'https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/'+cardid+'/transactions/eligibility/easyPaymentPlan?eligbleLoanAmount=100000' . passed
+And header Authorization = 'Bearer '+refreshAccessToken ................... passed
+And header client_id = 'f2f08c14-8e53-4b13-862c-bdf182d46df9' ............. passed
+And header uuid = randomString(20) ........................................ passed
+And header Accept = 'application/json' .................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Check_EPP_Plan.feature:18 - status code was: 401, expected: 200, response time: 437, url: https://sandbox.apihub.citi.com/gcb/api/v1/creditCards/44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d/transactions/eligibility/easyPaymentPlan?eligbleLoanAmount=100000, response: {"code":"unAuthorized","details":"Authorization credential is missing or invalid","type":"error"}&#13;
+	at ✽.Then status 200 (Check_EPP_Plan.feature:18)&#13;
+
+* print response .......................................................... skipped
+* match response.easyPaymentPlan[0].tenor == '3' .......................... skipped
+* match response.easyPaymentPlan[1].tenor == '6' .......................... skipped
+* match response.easyPaymentPlan[2].tenor == '12' ......................... skipped
+* match response.easyPaymentPlan[3].tenor == '24' ......................... skipped
+* print '*********Checked Easy payment plan using AccountId*********' ..... skipped</failure>
+  </testcase>
+</testsuite>
